@@ -1,0 +1,25 @@
+baseURL: https://example.org/
+languageCode: 'en-us'
+title: Historisches Hohndorf 123
+theme: hextra
+
+params:
+  contact:
+    email: info@example.org
+    phone: +1 202-555-1212
+  subtitle: The Best Widgets on Earth
+  footer:
+    displayCopyright: false
+    displayPoweredBy: false
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
