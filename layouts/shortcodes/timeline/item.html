@@ -1,0 +1,15 @@
+{{$to := now }}
+{{$to = time (.Get "to") }}
+
+<li class="event" data-date="{{$to.Year}}">
+    <h3>{{.Get "title"}}</h3>
+    {{.Inner}}
+  </li>
+
+<div class="timeline-item">
+    <div class="circle"></div>
+    <div class="info-box">
+        <h3>{{.Get "title"}}</h3>
+        <p></p>
+    </div>
+</div>

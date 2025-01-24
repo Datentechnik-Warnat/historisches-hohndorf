@@ -1,4 +1,5 @@
 // Light / Dark theme toggle
+
 (function () {
   const defaultTheme = 'system'
 
@@ -48,6 +49,10 @@
       );
     }
   });
+
+  
+
+  const comparison = new Comparison();
 })();
 
 ;

@@ -1,0 +1,12 @@
+
+<div class="hx-flex">
+    {{- $widths := .Get "columns" | default "25,25,25,25" -}}
+    {{- $widthArray := split $widths "," -}}
+    {{- $columns := split .Inner "<--->" -}}
+    {{- range $index, $column := $columns -}}
+        {{- $width := index $widthArray (mod $index (len $widthArray)) -}}
+        <div class="hx-flex-col hx-grow" style="width: {{- $width -}}%">
+            {{- $column | markdownify | safeHTML -}}
+        </div>
+    {{- end -}}
+</div>

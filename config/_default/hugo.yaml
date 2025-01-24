@@ -1,7 +1,19 @@
 baseURL: https://example.org/
 languageCode: 'en-us'
 title: Historisches Hohndorf 123
-theme: hextra
+theme: historisches-hohndorf
+
+# Enable SCSS processing
+build:
+  writeStats: true
+
+# Asset configuration
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: static
 
 params:
   contact:

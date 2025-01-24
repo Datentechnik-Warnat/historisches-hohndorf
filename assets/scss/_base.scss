@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+
+  color: $text-color;
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: $large-font-size;
+  }
+}
+
+p {
+  // font-weight: 400;
+  line-height: 1.7 !important;
+  text-align: justify;
+}
+
+h1 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  color: $heading-color;
+  font-size: $heading-font-size;
+
+  &:not(.site-title):before {
+    background: #767676;
+    content: "\020";
+    display: block;
+    height: 2px;
+    margin: 1rem 0;
+    width: 1em;
+  }
+}
+
+// Image alignments
+img[src$="#left"] {
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  &.float-left {
+    @media (min-width: $tablet-breakpoint) {
+      float: left;
+      margin: 0 10px 10px 0;
+    }
+  }
+  &.float-right {
+    @media (min-width: $tablet-breakpoint) {
+      float: right;
+      margin: 0 0 10px 10px;
+    }
+  }
+
+  &.align-left * {
+    margin-left: 0;
+    text-align: left;
+  }
+}

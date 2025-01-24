@@ -1,0 +1,9 @@
+@import "variables";
+@import "base";
+
+@import "timeline";
+
+@import url("https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css") 
+
+// This is the main entry point for all SCSS styles
+// It imports all the modular SCSS files and can contain any global styles
