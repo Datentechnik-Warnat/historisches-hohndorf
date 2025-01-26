@@ -1,0 +1,17 @@
+{{ $image := resources.Get "images/sachsen_signet_schwarz.png" }}
+{{ $image := $image.Process "resize 20x" }}
+{{ with site.Params.footer }}
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding u-noboosting" class="row">
+        <div class="col">
+        Diese Maßnahme wird mitfinanziert aus Steuermitteln auf der Grundlage des vom Sächsischen Landtag beschlossenen Haushaltes.
+      </div>
+      <div class="col">
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+      </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+{{ end }}

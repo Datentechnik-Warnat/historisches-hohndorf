@@ -26,5 +26,5 @@ tasks:
       - curl -o assets/lib/katex/auto-render.min.js https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js
       - curl -o assets/lib/katex/mhchem.min.js https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js
       - curl -o assets/lib/mermaid/mermaid.min.js https://cdn.jsdelivr.net/npm/mermaid@11.3.0/dist/mermaid.min.js
-      - curl -o assets/lib/image-compare/image-compare-viewer.min.js https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js
-      - curl -o assets/lib/image-compare/image-compare-viewer.min.css https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css
+      - curl -o assets/lib/image-compare/image-compare-viewer.min.js https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js
+      - curl -o assets/lib/image-compare/image-compare-viewer.min.css https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.css

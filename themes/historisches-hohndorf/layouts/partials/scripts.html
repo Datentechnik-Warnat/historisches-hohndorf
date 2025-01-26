@@ -31,6 +31,9 @@
   {{- end -}}
 {{- end -}}
 
+{{- $imageCompareJS := resources.Get "lib/image-compare/image-compare-viewer.min.js" | fingerprint -}}
+<script defer src="{{ $imageCompareJS.RelPermalink }}" integrity="{{ $imageCompareJS.Data.Integrity }}"></script>
+
 {{/* Mermaid */}}
 {{/* FIXME: need to investigate .Page.Store hasMermaid is set for homepage */}}
 {{- if and (.Page.Store.Get "hasMermaid") (not .Page.IsHome) -}}

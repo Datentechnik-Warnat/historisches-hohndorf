@@ -1,5 +1,4 @@
 // Light / Dark theme toggle
-
 (function () {
   const defaultTheme = '{{ site.Params.theme.default | default `system`}}'
 
@@ -49,8 +48,4 @@
       );
     }
   });
-
-  
-
-  const comparison = new Comparison();
 })();

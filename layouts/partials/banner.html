@@ -1,0 +1,7 @@
+{{ if not .IsHome }}
+  <h1 class="site-title">
+    <a href="{{ relLangURL nil }}">{{ site.Title }}</a>
+  </h1>
+{{ else }}
+  <a class="Banner-link u-clickable" href="{{ relLangURL nil }}">{{ site.Title }}</a>
+{{ end }}

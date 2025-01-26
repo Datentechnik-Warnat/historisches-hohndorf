@@ -1,7 +1,7 @@
 baseURL: https://example.org/
 languageCode: 'en-us'
 title: Historisches Hohndorf 123
-theme: historisches-hohndorf
+theme: hugo-flex
 
 # Enable SCSS processing
 build:
@@ -16,22 +16,11 @@ module:
       target: static
 
 params:
-  contact:
-    email: info@example.org
-    phone: +1 202-555-1212
-  subtitle: The Best Widgets on Earth
-  footer:
-    displayCopyright: false
-    displayPoweredBy: false
-
-  page:
-    # full (100%), wide (90rem), normal (1280px)
-    width: wide
-
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
+  footer: true
+    
+  width: "100rem"
+  css:
+    - scss/main.scss
+  # js:
+  #   - js/foo.js
+  #   - bar.js    
