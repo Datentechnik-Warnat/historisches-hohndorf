@@ -219,7 +219,7 @@ h1 {
 
 h1 a {
   font-family: "UnifrakturMaguntia", serif;
-  font-size: clamp(11px, 3rem, 10vw);
+  font-size: clamp(11px, 3.5rem, 10vw);
   font-weight: 100 !important;
   color: #434c77; }
 
