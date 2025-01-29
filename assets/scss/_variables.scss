@@ -1,5 +1,5 @@
 // Colors
-$primary-color: #007bff;
+$primary-color: #434c77;
 $text-color: rgb(122, 122, 122);
 $heading-color: #000000;
 $border-color: #ddd;
@@ -22,3 +22,6 @@ $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 // Breakpoints
 $mobile-breakpoint: 499px;
 $tablet-breakpoint: 500px;
+
+$color-timeline: $primary-color;
+$color-year: $primary-color;

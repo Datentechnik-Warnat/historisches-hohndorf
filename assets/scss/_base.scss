@@ -4,7 +4,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: 400;
-
+  text-align:justify;
   color: $text-color;
 
   @media (min-width: $tablet-breakpoint) {
@@ -16,22 +16,7 @@ p {
   // font-weight: 400;
   line-height: 1.7 !important;
   text-align: justify;
-}
-
-h1 {
-  font-family: $heading-font-family;
-  font-weight: 600;
-  color: $heading-color;
-  font-size: $heading-font-size;
-
-  &:not(.site-title):before {
-    background: #767676;
-    content: "\020";
-    display: block;
-    height: 2px;
-    margin: 1rem 0;
-    width: 1em;
-  }
+  margin:0;
 }
 
 // Image alignments
@@ -62,14 +47,99 @@ figure {
 }
 
 
+.head-wrapper {
+  width:100%;
+}
 
 h1 {
-  &.site-title {
-    font-size:2rem;
-    
-    a {
-      color: black;
-      text-decoration: none;;
-    }
+  font-family: $heading-font-family;
+  font-weight: 600;
+  color: $heading-color;
+  font-size: $heading-font-size;
+  text-align:left;
+  line-height:1.1;
+
+  a {
+    text-decoration: none;
+    color:inherit;
   }
+
+  &.Heading-title:before {
+    background: $primary-color;
+    content: "\020";
+    display: block;
+    height: 3px;
+    margin: 1rem 0;
+    width: 2em;
+  }
+}
+
+.Footer {
+  font-size:12px;
+  color:#000000;
+}
+
+.align-right {
+  text-align:right;
+}
+.align-center {
+  text-align:center;
+}
+.align-left {
+  text-align:left;
+}
+
+.mr-1 {
+  margin-right:0.2rem;
+}
+.mr-2 {
+  margin-right:0.4rem;
+}
+
+.image-container {
+  width: 300px; /* Größe des Bildes anpassen */
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%; /* Macht das Bild rund */
+}
+
+.image-shape-right {
+  float: right; /* Oder right, je nach gewünschtem Layout */
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%; /* Macht das Bild rund */
+  shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+   /* Bildkontur wird genutzt */
+  shape-margin: 10px; /* Abstand um die Form */
+   /* Falls Browser `shape-outside` nicht voll unterstützt */
+  // width: 200px; /* Beispielgröße */
+}
+.image-shape-left {
+  float: left; /* Oder right, je nach gewünschtem Layout */
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%; /* Macht das Bild rund */
+  shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+   /* Bildkontur wird genutzt */
+  shape-margin: 10px; /* Abstand um die Form */
+   /* Falls Browser `shape-outside` nicht voll unterstützt */
+  // width: 200px; /* Beispielgröße */
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }

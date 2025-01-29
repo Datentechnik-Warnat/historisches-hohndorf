@@ -12,6 +12,15 @@
   .col-3 {
     flex: 3;
   }
+
+  .grow-none {
+    flex-grow:0;
+    flex-basis: auto;
+  }
+
+  &.vertical-center {
+    align-items:center;
+  }
 }
 
 @media (max-width: 400px) {

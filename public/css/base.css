@@ -169,7 +169,7 @@ kbd:has(kbd) {
 }
 
 .u-wrapper {
-  max-width: 100rem;
+  max-width: 80rem;
   margin: auto;
 }
 
@@ -190,32 +190,21 @@ kbd:has(kbd) {
 .u-noboosting {
   max-height: 1000000px;
 }
-@import url("https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800");
+@charset "UTF-8";
 @use "variables" as *;
 body {
   font-family: "Roboto", "Arial";
   font-size: 16px;
   font-weight: 400;
+  text-align: justify;
   color: #7a7a7a; }
   @media (min-width: 500px) {
     body {
       font-size: 22px; } }
 p {
   line-height: 1.7 !important;
-  text-align: justify; }
-
-h1 {
-  font-family: "Roboto Serif", Sans-serif;
-  font-weight: 600;
-  color: #000000;
-  font-size: 2.25em; }
-  h1:not(.site-title):before {
-    background: #767676;
-    content: "\020";
-    display: block;
-    height: 2px;
-    margin: 1rem 0;
-    width: 1em; }
+  text-align: justify;
+  margin: 0; }
 
 img[src$="#left"] {
   margin: 1rem auto;
@@ -236,11 +225,95 @@ figure.align-left * {
   margin-left: 0;
   text-align: left; }
 
-h1.site-title {
-  font-size: 2rem; }
-  h1.site-title a {
-    color: black;
-    text-decoration: none; }
+.head-wrapper {
+  width: 100%; }
+
+h1 {
+  font-family: "Roboto Serif", Sans-serif;
+  font-weight: 600;
+  color: #000000;
+  font-size: 2.25em;
+  text-align: left;
+  line-height: 1.1; }
+  h1 a {
+    text-decoration: none;
+    color: inherit; }
+  h1.Heading-title:before {
+    background: #434c77;
+    content: "\020";
+    display: block;
+    height: 3px;
+    margin: 1rem 0;
+    width: 2em; }
+
+.Footer {
+  font-size: 12px;
+  color: #000000; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.mr-1 {
+  margin-right: 0.2rem; }
+
+.mr-2 {
+  margin-right: 0.4rem; }
+
+.image-container {
+  width: 300px;
+  /* Größe des Bildes anpassen */
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  /* Macht das Bild rund */ }
+
+.image-shape-right {
+  float: right;
+  /* Oder right, je nach gewünschtem Layout */
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  /* Macht das Bild rund */
+  shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  /* Bildkontur wird genutzt */
+  shape-margin: 10px;
+  /* Abstand um die Form */
+  /* Falls Browser `shape-outside` nicht voll unterstützt */ }
+
+.image-shape-left {
+  float: left;
+  /* Oder right, je nach gewünschtem Layout */
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  /* Macht das Bild rund */
+  shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
+  /* Bildkontur wird genutzt */
+  shape-margin: 10px;
+  /* Abstand um die Form */
+  /* Falls Browser `shape-outside` nicht voll unterstützt */ }
+
+.splide__slide img {
+  width: 100%;
+  height: auto; }
 
 @use "variables" as *;
 #timeline-content {
@@ -249,15 +322,16 @@ h1.site-title {
 
 /* Timeline */
 .timeline {
-  border-left: 4px solid #828282;
+  border-left: 4px solid #434c77;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
-  font-size: 1.03em;
-  padding: 5px 50px 50px 50px;
+  font-size: 0.75em;
+  padding: 5px 50px 10px 50px;
   list-style: none;
+  color: black;
   text-align: left; }
   .timeline h1 {
     font-family: "Roboto", "Arial";
@@ -272,30 +346,34 @@ h1.site-title {
     font-size: 1.4em; }
   .timeline .event {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-    padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative; }
+    .timeline .event .item-content {
+      position: relative;
+      top: -27px; }
     .timeline .event:last-of-type {
       padding-bottom: 0;
       margin-bottom: 0;
       border: none; }
+    .timeline .event span.year {
+      position: sticky;
+      top: 7px;
+      margin-left: -130px;
+      color: #434c77;
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;
+      font-size: 1.2em;
+      min-width: 120px;
+      font-family: "Roboto", "Arial"; }
     .timeline .event:before, .timeline .event:after {
       position: absolute;
       display: block;
       top: 0; }
-    .timeline .event:before {
-      left: -217.5px;
-      color: black;
-      content: attr(data-date);
-      text-align: right;
-      font-weight: 100;
-      font-size: 0.9em;
-      min-width: 120px;
-      font-family: "Roboto", "Arial"; }
     .timeline .event:after {
-      box-shadow: 0 0 0 4px #828282;
+      box-shadow: 0 0 0 4px #434c77;
       left: -57.85px;
-      background: #313534;
+      background: white;
       border-radius: 50%;
       height: 11px;
       width: 11px;
@@ -310,7 +388,35 @@ h1.site-title {
     flex: 2; }
   .row .col-3 {
     flex: 3; }
+  .row .grow-none {
+    flex-grow: 0;
+    flex-basis: auto; }
+  .row.vertical-center {
+    align-items: center; }
 
 @media (max-width: 400px) {
   .row {
     display: block; } }
+
+.splide .splide__pagination__page.is-active {
+  background: #434c77; }
+
+.splide .splide__arrow svg {
+  fill: #434c77; }
+
+h1 a {
+  font-family: "UnifrakturMaguntia", serif;
+  font-size: 4rem;
+  font-weight: 100 !important;
+  color: #434c77; }
+
+.Heading {
+  display: block; }
+
+.Heading-subtitle {
+  font-family: "UnifrakturMaguntia", serif;
+  color: black;
+  font-weight: 100; }
+
+.page {
+  padding-left: 75px; }

@@ -1,7 +1,5 @@
 @use "variables" as *;
 
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
-
 $font-title: 'Saira', sans-serif;
 $font-text: 'Chivo', sans-serif;
 
@@ -13,15 +11,14 @@ $dotborder: 4px;
 $dot: 11px;
 $line: 4px;
 
-$background: #252827;
+$background: #fff;
 
 $color-primary: #004ffc;
 $color-light: white;
 
 $color-dim: #6c6d6d;
 
-$color-year: black;
-$color-timeline: #828282;
+// $color-year: black;
 
 #timeline-content {
   margin-top: $spacing;
@@ -41,9 +38,10 @@ $color-timeline: #828282;
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
-  font-size: 1.03em;
-  padding: 5px $spacing $spacing $spacing;
+  font-size: 0.75em;
+  padding: 5px $spacing 10px $spacing;
   list-style: none;
+  color:black;
   text-align: left;
   // font-weight: 100;
   // max-width: 30%;
@@ -65,9 +63,14 @@ $color-timeline: #828282;
 
   .event {
     border-bottom: 1px dashed fade-out($color-light, 0.9);
-    padding-bottom: ($spacing * 0.5);
-    margin-bottom: $spacing;
+    // padding-bottom: 15px;
+    margin-bottom: 10px;
     position: relative;
+
+    .item-content {
+      position:relative;
+      top:-27px;
+    }
 
     &:last-of-type {
       padding-bottom: 0;
@@ -75,6 +78,20 @@ $color-timeline: #828282;
       border: none;
     }
 
+    span.year {
+      position:sticky;
+      top:7px;
+      margin-left:-130px;
+
+      color: $color-year;
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;
+      font-size: 1.2em;
+      min-width: $date;
+      font-family: $base-font-family;
+
+    }
     &:before,
     &:after {
       position: absolute;
@@ -82,16 +99,19 @@ $color-timeline: #828282;
       top: 0;
     }
 
-    &:before {
-      left: (((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1);
-      color: $color-year;
-      content: attr(data-date);
-      text-align: right;
-      font-weight: 100;
-      font-size: 0.9em;
-      min-width: $date;
-      font-family: $base-font-family;
-    }
+    // &:before {
+    //   left: (((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1);
+    //   color: $color-year;
+    //   content: attr(data-date);
+    //   text-align: right;
+    //   font-weight: 100;
+    //   font-size: 0.9em;
+    //   min-width: $date;
+    //   font-family: $base-font-family;
+    //   top:5px;
+
+    //   // position:sticky;
+    // }
 
     &:after {
       box-shadow: 0 0 0 $dotborder fade-out($color-timeline, 0);

@@ -17,10 +17,18 @@ module:
 
 params:
   footer: true
-    
-  width: "100rem"
+  showdate: false
+  google_fonts:
+    - ["UnifrakturMaguntia", "400, 700"]
+    - ["Roboto", "400, 700"]
+  width: "80rem"
   css:
     - scss/main.scss
   # js:
   #   - js/foo.js
   #   - bar.js    
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

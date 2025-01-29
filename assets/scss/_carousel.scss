@@ -1,0 +1,8 @@
+.splide {
+  .splide__pagination__page.is-active {
+    background: $primary-color;
+  }
+  .splide__arrow svg {
+    fill: $primary-color;
+  }
+}
