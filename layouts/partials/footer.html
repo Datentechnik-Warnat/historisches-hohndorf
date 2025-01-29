@@ -1,3 +1,4 @@
+{{ $simpleLightboxJs := resources.Get "libs/simple-lightbox/simple-lightbox.min.js" }}
 {{ $image := resources.Get "images/sachsen_signet_schwarz.png" }}
 {{ $image := $image.Process "resize 30x" }}
 {{ with site.Params.footer }}
@@ -16,3 +17,17 @@
     </div>
   </footer>
 {{ end }}
+<script src="{{ $simpleLightboxJs.RelPermalink }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const lightboxElements = document.querySelectorAll('a.lightbox');
+    lightboxElements.forEach(function(element) {
+      new SimpleLightbox(element, {
+        captionPosition: 'bottom',
+        navText: ['←','→'],
+        closeText: '×',
+        loadingCaption: 'Laden...'
+      });
+    });
+  });
+</script>
