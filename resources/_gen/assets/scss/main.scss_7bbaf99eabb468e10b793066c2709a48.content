@@ -19,6 +19,10 @@ img[src$="#left"] {
   max-width: 100%;
   height: auto; }
 
+#logo {
+  max-width: clamp(20px, 14vw, 100px);
+  height: auto; }
+
 @media (min-width: 500px) {
   figure.float-left {
     float: left;
@@ -140,7 +144,8 @@ h1 {
   padding: 5px 50px 10px 50px;
   list-style: none;
   color: black;
-  text-align: left; }
+  text-align: left;
+  margin-left: 75px; }
   .timeline h1 {
     font-family: "Roboto", "Arial";
     letter-spacing: 1.5px;
@@ -202,7 +207,7 @@ h1 {
   .row.vertical-center {
     align-items: center; }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .row {
     display: block; } }
 
@@ -214,7 +219,7 @@ h1 {
 
 h1 a {
   font-family: "UnifrakturMaguntia", serif;
-  font-size: 4rem;
+  font-size: clamp(11px, 3rem, 10vw);
   font-weight: 100 !important;
   color: #434c77; }
 
@@ -226,5 +231,36 @@ h1 a {
   color: black;
   font-weight: 100; }
 
-.page {
-  padding-left: 75px; }
+@media (max-width: 500px) {
+  .Footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc; }
+    .Footer .row {
+      display: flex;
+      flex-direction: row; }
+    .Footer .align-right {
+      text-align: justify; }
+    .Footer .align-left {
+      text-align: center;
+      width: 100%; }
+  img.image-shape-right {
+    max-width: clamp(40%, 20vw, 30vw); }
+  .timeline {
+    border-left-width: 2px;
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: justify; }
+    .timeline .event:after {
+      width: 5px;
+      height: 5px;
+      left: -13.85px;
+      box-shadow: 0 0 0 2px #434c77; }
+    .timeline .event .item-content {
+      top: -19px;
+      font-size: 14px;
+      line-height: 1.3; }
+    .timeline .event span.year {
+      font-size: 1.1em;
+      margin-left: -53px; } }

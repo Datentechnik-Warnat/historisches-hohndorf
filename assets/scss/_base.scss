@@ -11,7 +11,6 @@ body {
     font-size: $large-font-size;
   }
 }
-
 p {
   // font-weight: 400;
   line-height: 1.7 !important;
@@ -25,6 +24,13 @@ img[src$="#left"] {
   max-width: 100%;
   height: auto;
 }
+
+#logo {
+  // display:none;
+  max-width:clamp(20px, 14vw, 100px);
+  height:auto;
+}
+
 
 figure {
   &.float-left {
