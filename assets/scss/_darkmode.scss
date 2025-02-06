@@ -1,0 +1,24 @@
+div, p, body, h1, h2, h3, h4, h5, h6 {
+    color:#ffffff;
+}
+
+.timeline {
+    color:white;
+    border-left-color: #a3b3ff;
+
+    .event span.year {
+        color:#a3b3ff;
+    }
+    .event:after {
+        box-shadow: 0 0 0 4px #a3b3ff;
+        background:black;
+    }
+}
+
+.Heading-subtitle {
+    color:white;
+}
+
+img.footer_image {
+    filter:invert(1)
+}

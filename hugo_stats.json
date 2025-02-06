@@ -2,16 +2,13 @@
   "htmlElements": {
     "tags": [
       "a",
-      "article",
       "body",
       "br",
       "div",
-      "em",
       "figcaption",
       "figure",
       "footer",
       "h1",
-      "h2",
       "h3",
       "head",
       "header",
@@ -26,7 +23,6 @@
       "section",
       "span",
       "strong",
-      "time",
       "title",
       "ul"
     ],
@@ -43,6 +39,7 @@
       "col-3",
       "event",
       "float-right",
+      "footer_image",
       "grow-none",
       "image-compare-slider",
       "image-shape-right",
@@ -65,9 +62,8 @@
       "year"
     ],
     "ids": [
-      "introduction",
       "logo",
-      "splide_946f7298b2b7993c9f0beb4c26d635f3"
+      "splide_991859b16bc92e50966cb04e7dd5b9f1"
     ]
   }
 }

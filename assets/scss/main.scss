@@ -9,5 +9,8 @@
 
 @import "responsive";
 
+@media (prefers-color-scheme: dark) {
+    @import "darkmode";
+}
 // This is the main entry point for all SCSS styles
 // It imports all the modular SCSS files and can contain any global styles
