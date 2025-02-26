@@ -43,7 +43,7 @@ figure.align-left * {
 h1 {
   font-family: "Roboto Serif", Sans-serif;
   font-weight: 600;
-  color: #000000;
+  color: #434c77;
   font-size: 2.25em;
   text-align: left;
   line-height: 1.1; }
@@ -264,3 +264,19 @@ h1 a {
     .timeline .event span.year {
       font-size: 1.1em;
       margin-left: -53px; } }
+
+@media (prefers-color-scheme: dark) {
+  div, p, body, h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; }
+  .timeline {
+    color: white;
+    border-left-color: #a3b3ff; }
+    .timeline .event span.year {
+      color: #a3b3ff; }
+    .timeline .event:after {
+      box-shadow: 0 0 0 4px #a3b3ff;
+      background: black; }
+  .Heading-subtitle {
+    color: white; }
+  img.footer_image {
+    filter: invert(1); } }

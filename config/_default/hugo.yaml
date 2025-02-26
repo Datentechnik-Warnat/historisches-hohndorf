@@ -1,5 +1,5 @@
 baseURL: https://historisches-hohndorf.de/
-languageCode: 'de-de'
+languageCode: 'de'
 title: Historisches Hohndorf
 theme: hugo-flex
 
@@ -49,17 +49,23 @@ params:
     manifest:
       background_color: '#005a99'
       theme_color: '#005a99'
+
     offline_image: images/pwa/offline.png
+    
     precaches:
     - url: /
     - url: /wasserschaenke/
-    - url: /images/
+    - url: /images/logo.png
+    - url: /wasserschaenke/images/top_image.png
+    - url: /wasserschaenke/images/pic_01.png
+    - url: /wasserschaenke/images/pic_01_colored.png
     # precaches: 
     #   - "/wasserschaenke/"
 
 
   footer: true
   showdate: false
+
   google_fonts:
     - ["UnifrakturMaguntia", "400, 700"]
     - ["Roboto", "400, 700"]
