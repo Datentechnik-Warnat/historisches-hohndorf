@@ -1,5 +1,5 @@
-baseURL: https://example.org/
-languageCode: 'en-us'
+baseURL: https://historisches-hohndorf.de/
+languageCode: 'de-de'
 title: Historisches Hohndorf
 theme: hugo-flex
 
