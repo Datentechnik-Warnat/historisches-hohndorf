@@ -1,6 +1,6 @@
 baseURL: https://example.org/
 languageCode: 'en-us'
-title: Historisches Hohndorf 123
+title: Historisches Hohndorf
 theme: hugo-flex
 
 # Enable SCSS processing
@@ -14,8 +14,50 @@ module:
       target: assets
     - source: static
       target: static
+  imports:
+    - path: github.com/hugomods/pwa
 
 params:
+  pwa:
+    caches:
+      font:
+        max_age: 2592000
+        origins: []
+        strategy: cache-first
+      image:
+        max_age: 2592000
+        origins: []
+        strategy: cache-first
+      script:
+        max_age: 2592000
+        origins: []
+        strategy: cache-first
+      style:
+        max_age: 2592000
+        origins: []
+        strategy: cache-first
+    debug: true
+
+    icon_path: images/pwa/icon.png
+    icon_sizes:
+    - 48
+    - 64
+    - 128
+    - 144
+    - 256
+    - 512
+    manifest:
+      background_color: '#005a99'
+      theme_color: '#005a99'
+    offline_image: images/pwa/offline.png
+    precaches:
+    - url: /
+    - url: /wasserschaenke/
+    - url: /images/
+    # precaches: 
+    #   - "/wasserschaenke/"
+
+
   footer: true
   showdate: false
   google_fonts:
@@ -32,3 +74,11 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - Offline
+  - WebAppManifest      

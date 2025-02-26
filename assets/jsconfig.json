@@ -1,0 +1,15 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!google!chrome/workbox@v7.3.0+incompatible/packages/workbox-cacheable-response/src/*",
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!google!chrome/workbox@v7.3.0+incompatible/packages/workbox-core/src/*",
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!google!chrome/workbox@v7.3.0+incompatible/packages/workbox-expiration/src/*",
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!google!chrome/workbox@v7.3.0+incompatible/packages/workbox-routing/src/*",
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!google!chrome/workbox@v7.3.0+incompatible/packages/workbox-strategies/src/*",
+    "../../../../../../home/swarnat/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/jakearchibald/idb@v7.1.1+incompatible/src/*"
+   ]
+  }
+ }
+}
