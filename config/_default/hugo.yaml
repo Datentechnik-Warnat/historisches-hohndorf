@@ -58,7 +58,7 @@ params:
     - url: /images/logo.png
     - url: /wasserschaenke/images/top_image.png
     - url: /wasserschaenke/images/pic_01.png
-    - url: /wasserschaenke/images/pic_01_colored.png
+    - url: /wasserschaenke/images/pic_01_colored.jpg
     # precaches: 
     #   - "/wasserschaenke/"
 
