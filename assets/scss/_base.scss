@@ -17,7 +17,10 @@ p {
   text-align: justify;
   margin:0;
 }
-
+a.link-invisible {
+  color:inherit;
+  text-decoration: none;
+}
 // Image alignments
 img[src$="#left"] {
   margin: 1rem auto;
@@ -148,4 +151,7 @@ h1 {
 .splide__slide img {
   width: 100%;
   height: auto;
+}
+.splide__slide.splide__image {
+  padding-right:5px;
 }

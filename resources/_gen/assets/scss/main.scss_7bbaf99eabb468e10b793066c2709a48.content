@@ -14,6 +14,10 @@ p {
   text-align: justify;
   margin: 0; }
 
+a.link-invisible {
+  color: inherit;
+  text-decoration: none; }
+
 img[src$="#left"] {
   margin: 1rem auto;
   max-width: 100%;
@@ -127,6 +131,9 @@ h1 {
   width: 100%;
   height: auto; }
 
+.splide__slide.splide__image {
+  padding-right: 5px; }
+
 @use "variables" as *;
 #timeline-content {
   margin-top: 50px;
@@ -160,7 +167,8 @@ h1 {
   .timeline .event {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     margin-bottom: 10px;
-    position: relative; }
+    position: relative;
+    clear: both; }
     .timeline .event .item-content {
       position: relative;
       top: -27px; }
@@ -264,6 +272,34 @@ h1 a {
     .timeline .event span.year {
       font-size: 1.1em;
       margin-left: -53px; } }
+
+div.hugo-image-container {
+  display: inline-block;
+  z-index: 10;
+  position: relative; }
+  div.hugo-image-container.align-right {
+    float: right;
+    margin: 5px 0 5px 5px; }
+  div.hugo-image-container.align-left {
+    float: left;
+    margin: 5px 5px 5px 0; }
+  div.hugo-image-container img.hugo-image {
+    transition: outline-offset 50ms; }
+  div.hugo-image-container div.image-subtitle {
+    padding-top: 0px;
+    transition: color 50ms; }
+    div.hugo-image-container div.image-subtitle a {
+      color: #777;
+      font-size: 14px;
+      text-decoration: none; }
+  div.hugo-image-container:hover img.hugo-image {
+    outline-offset: 2px;
+    outline: 2px solid #434c77; }
+  div.hugo-image-container:hover div.image-subtitle a {
+    color: #434c77; }
+
+.sl-wrapper .sl-image .sl-caption {
+  position: relative !important; }
 
 @media (prefers-color-scheme: dark) {
   div, p, body, h1, h2, h3, h4, h5, h6 {

@@ -1,0 +1,48 @@
+div.hugo-image-container {
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+
+    &.align-right {
+        float: right;
+        margin: 5px 0 5px 5px;
+    }
+
+    &.align-left {
+        float: left;
+        margin: 5px 5px 5px 0;
+    }
+
+    img.hugo-image {
+        transition: outline-offset 50ms;
+    }
+
+    div.image-subtitle {
+        padding-top: 0px;
+        
+        a {
+            color: #777;
+            font-size: 14px;
+
+            text-decoration: none;
+        }
+
+        transition: color 50ms;
+    }  
+
+    &:hover {
+        img.hugo-image {
+            outline-offset: 2px;
+            outline: 2px solid $primary-color;
+        }
+
+        div.image-subtitle a {
+            color:$primary-color;
+        }
+    }    
+  
+}
+
+.sl-wrapper .sl-image .sl-caption {
+    position:relative !important;
+}

@@ -29,5 +29,18 @@
         loadingCaption: 'Laden...'
       });
     });
+    
+    const lightboxElementsSplide = document.querySelectorAll(".splide");
+    lightboxElementsSplide.forEach(function(element) {
+      var id = element.id;
+
+      new SimpleLightbox('#' + id + ' ul.splide__list li.splide__image', {
+        captionPosition: 'bottom',
+        sourceAttr: "data-fullurl",
+        navText: ['←','→'],
+        closeText: '×',
+        loadingCaption: 'Laden...'
+      });
+    });
   });
 </script>
