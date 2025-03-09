@@ -1,0 +1,15 @@
+{
+  "name": "Hugo Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [1313],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "bungcip.better-toml",
+    "davidanson.vscode-markdownlint"
+  ],
+  "remoteUser": "vscode"
+}
