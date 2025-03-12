@@ -159,3 +159,18 @@ h1 {
     font-size:15px;
   }
 }
+
+table.table {
+  font-size:15px;
+  
+  &.full-width {
+    width:100%;
+  }
+  
+  th {
+    background-color:#eee;
+  }
+  td {
+    vertical-align: top;
+  }
+}
