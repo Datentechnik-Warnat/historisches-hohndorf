@@ -2,15 +2,16 @@ div.hugo-image-container {
     display: inline-block;
     z-index: 10;
     position: relative;
+    max-width:50%;
 
     &.align-right {
         float: right;
-        margin: 5px 0 5px 5px;
+        margin: 5px 0 5px 15px;
     }
 
     &.align-left {
         float: left;
-        margin: 5px 5px 5px 0;
+        margin: 5px 15px 5px 0;
     }
 
     img.hugo-image {
@@ -53,7 +54,12 @@ div.image-row {
     flex-direction:row;
     padding-left:5px;
 
+    margin-top:10px;
     margin-bottom:10px;
+
+    div:first-of-type {
+        margin-left:-5px;
+    }
 
     div {
         padding-right:10px;

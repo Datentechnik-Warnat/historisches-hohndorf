@@ -30,8 +30,14 @@ img[src$="#left"] {
 
 #logo {
   // display:none;
-  max-width:clamp(20px, 14vw, 100px);
+  max-width:clamp(20px, 22vw, 120px);
   height:auto;
+
+  fill:$primary-color;
+
+  position: absolute;
+  right: 30px;
+  top: 1.5rem;  
 }
 
 
