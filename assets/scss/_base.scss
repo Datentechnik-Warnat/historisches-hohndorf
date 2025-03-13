@@ -10,6 +10,13 @@ body {
   @media (min-width: $tablet-breakpoint) {
     font-size: $large-font-size;
   }
+
+  .sl-overlay {
+    background:#000;
+  }  
+  .sl-image img {
+    border:2px solid $primary-color !important;
+  }
 }
 p {
   // font-weight: 400;
@@ -180,3 +187,4 @@ table.table {
     vertical-align: top;
   }
 }
+
