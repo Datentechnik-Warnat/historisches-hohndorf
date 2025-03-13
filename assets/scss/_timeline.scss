@@ -39,7 +39,7 @@ $color-dim: #6c6d6d;
   position: relative;
   line-height: 1.4em;
   font-size: 0.75em;
-  padding: 5px $spacing 10px $spacing;
+  padding: 5px 0 10px $spacing;
   list-style: none;
   color:$text-color;
   text-align: left;
@@ -68,11 +68,15 @@ $color-dim: #6c6d6d;
     margin-bottom: 10px;
     position: relative;
     clear:both;
+    text-align:justify;
 
     .item-content {
       position:relative;
       top:-27px;
       overflow:hidden;
+
+      margin-left:-10px;
+      padding-left:10px;
     }
 
     &:last-of-type {

@@ -5,18 +5,31 @@
         }
     }
 
+    .Heading {
+        margin-right: 22vw;        
+    }
     .Heading-subtitle {
         clear:both;
     }
 
+    div.hugo-image-container {
+        max-width:100% !important;
+
+    }    
     div.image-row {
         flex-direction:column !important;
         align-items:center;
+
+  
+    
     }
 }
 
 @media (max-width: 500px) {
-
+    #logo {
+        top:0px;
+        right:10px;
+    }
     .Footer {
         .row {
             display: flex;
@@ -50,6 +63,7 @@
             display: block;
             float: none !important;
         }
+
     }
 
     .timeline {
