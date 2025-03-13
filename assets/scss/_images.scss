@@ -64,8 +64,13 @@ div.image-row {
     div {
         padding-right:10px;
     }
+    div.hugo-image-container:nth-last-child(2) {
+        padding-right:0;
+    }
+
     div.auto-fill {
         flex-grow:1;
+        padding-right:0;
 
         img {
 
