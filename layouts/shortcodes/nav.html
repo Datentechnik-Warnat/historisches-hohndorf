@@ -1,0 +1,24 @@
+{{ $pages := .Site.Pages.ByWeight }}
+
+{{ $current := .Page }}
+{{ $index := -1 }}
+
+{{ range $i, $p := $pages }}
+    {{ if eq $p.RelPermalink $current.RelPermalink }}
+        {{ $index = $i }}
+    {{ end }}
+{{ end }}
+
+<div class="pagenav">
+{{ if ge $index 0 }}
+    {{ if lt (add $index 1) (len $pages) }}
+        {{ $page := index $pages (add $index 1)}}
+        <a href="{{ $page.RelPermalink }}" class="link_next" title="Nächster Standort">{{ $page.LinkTitle }}</a>
+    {{ end }}
+
+    {{ if gt $index 0 }}
+        {{ $page := index $pages (sub $index 1)}}
+        <a href="{{ $page.RelPermalink }}" class="link_prev" title="Vorheriger Standort">{{ $page.LinkTitle }}</a>
+    {{ end }}
+{{ end }}
+</div>
