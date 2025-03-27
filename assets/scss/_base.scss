@@ -4,7 +4,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: 400;
-  text-align:justify;
+  text-align: justify;
   color: $text-color;
 
   @media (min-width: $tablet-breakpoint) {
@@ -12,22 +12,26 @@ body {
   }
 
   .sl-overlay {
-    background:#000;
-  }  
+    background: #000;
+  }
+
   .sl-image img {
-    border:2px solid $primary-color !important;
+    border: 2px solid $primary-color !important;
   }
 }
+
 p {
   // font-weight: 400;
   line-height: 1.7 !important;
   text-align: justify;
-  margin:0;
+  margin: 0;
 }
+
 a.link-invisible {
-  color:inherit;
+  color: inherit;
   text-decoration: none;
 }
+
 // Image alignments
 img[src$="#left"] {
   margin: 1rem auto;
@@ -37,14 +41,14 @@ img[src$="#left"] {
 
 #logo {
   // display:none;
-  max-width:clamp(20px, 22vw, 120px);
-  height:auto;
+  max-width: clamp(20px, 22vw, 120px);
+  height: auto;
 
-  fill:$primary-color;
+  fill: $primary-color;
 
   position: absolute;
   right: 30px;
-  top: 1.5rem;  
+  top: 1.5rem;
 }
 
 
@@ -55,10 +59,11 @@ figure {
       margin: 0 10px 10px 0;
     }
   }
+
   &.float-right {
     @media (min-width: $tablet-breakpoint) {
       float: right;
-      margin: 0 0 10px 10px; 
+      margin: 0 0 10px 10px;
     }
   }
 
@@ -70,7 +75,7 @@ figure {
 
 
 .head-wrapper {
-  width:100%;
+  width: 100%;
 }
 
 h1 {
@@ -78,12 +83,12 @@ h1 {
   font-weight: 600;
   color: $heading-color;
   font-size: $heading-font-size;
-  text-align:left;
-  line-height:1.1;
+  text-align: left;
+  line-height: 1.1;
 
   a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
   }
 
   &.Heading-title:before {
@@ -97,29 +102,43 @@ h1 {
 }
 
 .Footer {
-  font-size:12px;
-  color:#000000;
+  font-size: 12px;
+  color: #000000;
+}
+
+.footer_link {
+  color: #777;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .align-right {
-  text-align:right;
+  text-align: right;
 }
+
 .align-center {
-  text-align:center;
+  text-align: center;
 }
+
 .align-left {
-  text-align:left;
+  text-align: left;
 }
 
 .mr-1 {
-  margin-right:0.2rem;
+  margin-right: 0.2rem;
 }
+
 .mr-2 {
-  margin-right:0.4rem;
+  margin-right: 0.4rem;
 }
 
 .image-container {
-  width: 300px; /* Größe des Bildes anpassen */
+  width: 300px;
+  /* Größe des Bildes anpassen */
   height: 300px;
   position: relative;
   display: flex;
@@ -133,31 +152,39 @@ h1 {
   object-fit: cover;
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
-  border-radius: 50%; /* Macht das Bild rund */
+  border-radius: 50%;
+  /* Macht das Bild rund */
 }
 
 .image-shape-right {
-  float: right; /* Oder right, je nach gewünschtem Layout */
+  float: right;
+  /* Oder right, je nach gewünschtem Layout */
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
-  border-radius: 50%; /* Macht das Bild rund */
+  border-radius: 50%;
+  /* Macht das Bild rund */
   shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
   clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
-   /* Bildkontur wird genutzt */
-  shape-margin: 10px; /* Abstand um die Form */
-   /* Falls Browser `shape-outside` nicht voll unterstützt */
+  /* Bildkontur wird genutzt */
+  shape-margin: 10px;
+  /* Abstand um die Form */
+  /* Falls Browser `shape-outside` nicht voll unterstützt */
   // width: 200px; /* Beispielgröße */
 }
+
 .image-shape-left {
-  float: left; /* Oder right, je nach gewünschtem Layout */
+  float: left;
+  /* Oder right, je nach gewünschtem Layout */
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
-  border-radius: 50%; /* Macht das Bild rund */
+  border-radius: 50%;
+  /* Macht das Bild rund */
   shape-outside: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
   clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 80%);
-   /* Bildkontur wird genutzt */
-  shape-margin: 10px; /* Abstand um die Form */
-   /* Falls Browser `shape-outside` nicht voll unterstützt */
+  /* Bildkontur wird genutzt */
+  shape-margin: 10px;
+  /* Abstand um die Form */
+  /* Falls Browser `shape-outside` nicht voll unterstützt */
   // width: 200px; /* Beispielgröße */
 }
 
@@ -165,26 +192,70 @@ h1 {
   width: 100%;
   height: auto;
 }
+
 .splide__slide.splide__image {
-  padding-right:5px;
+  padding-right: 5px;
 
   .image-subtitle {
-    font-size:15px;
+    font-size: 15px;
   }
 }
 
 table.table {
-  font-size:15px;
-  
+  font-size: 15px;
+
   &.full-width {
-    width:100%;
+    width: 100%;
   }
-  
+
   th {
-    background-color:#eee;
+    background-color: #eee;
   }
+
   td {
     vertical-align: top;
   }
 }
 
+.pagenav {
+  margin-top:10px;
+  height: 32px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    
+    font-size:13px;
+
+    display:inline-block;
+
+    border:2px solid #434c7750;
+    transition:border 0.25s;
+    line-height:20px;
+
+    &:hover {
+      border:2px solid #434c77;
+    }
+  }
+
+
+  .link_next {
+    float:right; 
+    
+    padding:3px 10px 3px 10px;
+
+    &::after {
+      content: "\0000BB";
+      margin-left: 5px;
+    }
+  }
+
+  .link_prev {
+    padding:3px 10px 3px 10px;
+
+    &::before {
+      content: "\0000AB";
+      margin-right: 5px;
+    }
+  }
+}
