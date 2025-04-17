@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}">
+{{ $image := resources.Get "images/hohndorf.jpg" }}
 
 <head>
   {{ block "load_paginator" . }}{{ end }}
@@ -22,7 +23,7 @@
   {{ partialCached "banner.html" . .IsHome }}
   <main>
     {{ if .IsHome }}
-      <div class="hero-image" style="filter:brightness(0.7);  background-image: url('images/hohndorf.jpg');height: 345px;background-position: center;background-size: cover;">
+      <div class="hero-image" style="filter:brightness(0.7);  background-image: url('{{ $image.RelPermalink }}');height: 345px;background-position: center;background-size: cover;">
         <!-- <img class="hero-image" src="images/hohndorf.jpg" /> -->
       </div>
     {{ end }}    
