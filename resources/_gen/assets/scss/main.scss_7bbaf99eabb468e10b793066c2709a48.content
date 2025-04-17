@@ -5,10 +5,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: justify;
-  color: #7a7a7a; }
+  color: black; }
   @media (min-width: 500px) {
     body {
-      font-size: 22px; } }
+      font-size: 20px; } }
+  body .sl-overlay {
+    background: #000; }
+  body .sl-image img {
+    border: 2px solid #434c77 !important; }
+
 p {
   line-height: 1.7 !important;
   text-align: justify;
@@ -24,8 +29,12 @@ img[src$="#left"] {
   height: auto; }
 
 #logo {
-  max-width: clamp(20px, 14vw, 100px);
-  height: auto; }
+  max-width: clamp(20px, 22vw, 120px);
+  height: auto;
+  fill: #434c77;
+  position: absolute;
+  right: 30px;
+  top: 1.5rem; }
 
 @media (min-width: 500px) {
   figure.float-left {
@@ -65,6 +74,13 @@ h1 {
 .Footer {
   font-size: 12px;
   color: #000000; }
+
+.footer_link {
+  color: #777;
+  font-weight: bold;
+  text-decoration: none; }
+  .footer_link:hover {
+    text-decoration: underline; }
 
 .align-right {
   text-align: right; }
@@ -133,6 +149,42 @@ h1 {
 
 .splide__slide.splide__image {
   padding-right: 5px; }
+  .splide__slide.splide__image .image-subtitle {
+    font-size: 15px; }
+
+table.table {
+  font-size: 15px; }
+  table.table.full-width {
+    width: 100%; }
+  table.table th {
+    background-color: #eee; }
+  table.table td {
+    vertical-align: top; }
+
+.pagenav {
+  margin-top: 10px;
+  height: 32px; }
+  .pagenav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid #434c7750;
+    transition: border 0.25s;
+    line-height: 20px; }
+    .pagenav a:hover {
+      border: 2px solid #434c77; }
+  .pagenav .link_next {
+    float: right;
+    padding: 3px 10px 3px 10px; }
+    .pagenav .link_next::after {
+      content: "\0000BB";
+      margin-left: 5px; }
+  .pagenav .link_prev {
+    padding: 3px 10px 3px 10px; }
+    .pagenav .link_prev::before {
+      content: "\0000AB";
+      margin-right: 5px; }
 
 @use "variables" as *;
 #timeline-content {
@@ -148,7 +200,7 @@ h1 {
   position: relative;
   line-height: 1.4em;
   font-size: 0.75em;
-  padding: 5px 50px 10px 50px;
+  padding: 5px 0 10px 50px;
   list-style: none;
   color: black;
   text-align: left;
@@ -168,10 +220,15 @@ h1 {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     margin-bottom: 10px;
     position: relative;
-    clear: both; }
+    clear: both;
+    text-align: justify; }
     .timeline .event .item-content {
       position: relative;
-      top: -27px; }
+      top: -27px;
+      overflow: hidden;
+      margin-left: -10px;
+      padding-left: 10px;
+      padding-top: 4px; }
     .timeline .event:last-of-type {
       padding-bottom: 0;
       margin-bottom: 0;
@@ -232,14 +289,67 @@ h1 a {
   color: #434c77; }
 
 .Heading {
-  display: block; }
+  display: block;
+  margin-bottom: 15px; }
+
+.svg-logo {
+  color: #434c77; }
 
 .Heading-subtitle {
   font-family: "UnifrakturMaguntia", serif;
   color: black;
   font-weight: 100; }
 
+.page {
+  position: relative; }
+
+.page.home-page {
+  margin-top: -250px; }
+  .page.home-page header {
+    margin-bottom: 150px; }
+    .page.home-page header .Heading-link {
+      color: #fff; }
+    .page.home-page header h1.Heading-title:before {
+      background: #fff; }
+  .page.home-page #logo {
+    fill: white; }
+
+.hero-image {
+  filter: brightness(0.7); }
+
+@media (max-width: 1000px) {
+  .Heading-link {
+    font-size: 40px; }
+  .page.home-page {
+    margin-top: -23vh; } }
+
+@media (max-width: 600px) {
+  .Heading-link {
+    font-size: 30px; } }
+
 @media (max-width: 500px) {
+  .Heading-link {
+    font-size: 30px; }
+  .page.home-page header {
+    margin-bottom: 15vh; } }
+
+@media (max-width: 750px) {
+  h1 a {
+    font-size: clamp(11px, 3.5rem, 8vw); }
+  .Heading {
+    margin-right: 22vw; }
+  .Heading-subtitle {
+    clear: both; }
+  div.hugo-image-container {
+    max-width: 100% !important; }
+  div.image-row {
+    flex-direction: column !important;
+    align-items: center; } }
+
+@media (max-width: 500px) {
+  #logo {
+    top: 0px;
+    right: 10px; }
   .Footer {
     margin-top: 20px;
     padding-top: 20px;
@@ -252,8 +362,13 @@ h1 a {
     .Footer .align-left {
       text-align: center;
       width: 100%; }
+  .Heading-title:before {
+    display: none !important; }
   img.image-shape-right {
     max-width: clamp(40%, 20vw, 30vw); }
+  div.hugo-image-container.align-right {
+    display: block;
+    float: none !important; }
   .timeline {
     border-left-width: 2px;
     margin-left: 30px;
@@ -267,8 +382,8 @@ h1 a {
       box-shadow: 0 0 0 2px #434c77; }
     .timeline .event .item-content {
       top: -19px;
-      font-size: 14px;
-      line-height: 1.3; }
+      font-size: 15px;
+      line-height: 1.4; }
     .timeline .event span.year {
       font-size: 1.1em;
       margin-left: -53px; } }
@@ -279,14 +394,15 @@ div.hugo-image-container {
   position: relative; }
   div.hugo-image-container.align-right {
     float: right;
-    margin: 5px 0 5px 5px; }
+    margin: 5px 0 5px 15px; }
   div.hugo-image-container.align-left {
     float: left;
-    margin: 5px 5px 5px 0; }
+    margin: 5px 15px 5px 0; }
   div.hugo-image-container img.hugo-image {
     transition: outline-offset 50ms; }
   div.hugo-image-container div.image-subtitle {
     padding-top: 0px;
+    font-size: 15px;
     transition: color 50ms; }
     div.hugo-image-container div.image-subtitle a {
       color: #777;
@@ -300,6 +416,22 @@ div.hugo-image-container {
 
 .sl-wrapper .sl-image .sl-caption {
   position: relative !important; }
+
+div.image-row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  div.image-row div:first-of-type {
+    margin-left: -5px; }
+  div.image-row div {
+    padding-right: 10px; }
+  div.image-row div.hugo-image-container:nth-last-child(2) {
+    padding-right: 0; }
+  div.image-row div.auto-fill {
+    flex-grow: 1;
+    padding-right: 0; }
 
 @media (prefers-color-scheme: dark) {
   div, p, body, h1, h2, h3, h4, h5, h6 {
@@ -315,4 +447,10 @@ div.hugo-image-container {
   .Heading-subtitle {
     color: white; }
   img.footer_image {
-    filter: invert(1); } }
+    filter: invert(1); }
+  #logo {
+    fill: #ffffff; }
+  .Footer .footer_link {
+    color: #aaa; }
+  .Footer div {
+    color: #aaa; } }

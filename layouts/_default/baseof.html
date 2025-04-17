@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}">
+
+<head>
+  {{ block "load_paginator" . }}{{ end }}
+  {{ partial "meta.html" . }}
+  {{ partial "title.html" . }}
+  {{ partial "link.html" . }}
+  {{ partial "load_site_assets.html" . }}
+  {{ block "load_page_assets" . }}
+    {{ $noop := .Content }}
+  {{ end }}
+  
+  {{ partialCached "pwa/assets/meta" . }}  
+
+  {{ partial "assets.html" . }}
+
+  
+</head>
+
+<body>
+  {{ partialCached "banner.html" . .IsHome }}
+  <main>
+    {{ if .IsHome }}
+      <div class="hero-image" style="filter:brightness(0.7);  background-image: url('images/hohndorf.jpg');height: 345px;background-position: center;background-size: cover;">
+        <!-- <img class="hero-image" src="images/hohndorf.jpg" /> -->
+      </div>
+    {{ end }}    
+    <div class="u-wrapper page {{ if .IsHome }}home-page{{ end }}">
+      <div class="u-padding">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+  </main>
+  {{ partialCached "footer.html" . }}
+  
+  {{ partialCached "pwa/assets/sw" . }}
+  
+</body>
+
+</html>
