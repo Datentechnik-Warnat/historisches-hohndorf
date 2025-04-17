@@ -25,3 +25,56 @@ h1 {
   position:relative;
   // padding-left:75px;
 }
+
+.page{
+  &.home-page {
+    header {
+      margin-bottom:150px;
+
+      .Heading-link {
+        color:#fff;
+      }
+
+      h1.Heading-title:before {
+        background:#fff;
+      }
+
+    }
+
+
+    #logo {
+      fill:white;
+    }    
+    
+    margin-top:-250px
+  }
+}
+
+.hero-image {
+  filter:brightness(0.7);
+}
+
+@media (max-width: 1000px) {
+  .Heading-link {
+    font-size:40px;
+  }
+
+  .page.home-page {
+    margin-top:-23vh;
+  }
+}
+@media (max-width: 600px) {
+  .Heading-link {
+    font-size:30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Heading-link {
+    font-size:30px;
+  }
+
+  .page.home-page header {
+    margin-bottom:15vh;
+  }
+}
