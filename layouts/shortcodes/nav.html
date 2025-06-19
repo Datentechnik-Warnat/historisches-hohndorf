@@ -1,4 +1,4 @@
-{{ $pages := .Site.Pages.ByWeight }}
+{{ $pages := where (.Site.Pages.ByWeight) "Draft" false }}
 
 {{ $current := .Page }}
 {{ $index := -1 }}

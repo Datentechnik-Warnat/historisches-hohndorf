@@ -25,13 +25,25 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const lightboxElements = document.querySelectorAll('a.lightbox');
+
     lightboxElements.forEach(function(element) {
-      new SimpleLightbox(element, {
-        captionPosition: 'bottom',
-        navText: ['←','→'],
-        closeText: '×',
-        loadingCaption: 'Laden...'
-      });
+      if(element.closest("div.image-row")) {
+        parentRow = element.closest("div.image-row");
+        if(parentRow.classList.contains("lightbox-init")) {
+          return;
+        }
+        parentRow.classList.add("lightbox-init")
+        elementList = "#" + parentRow.id + " a.lightbox"
+      } else {
+        elementList = element
+      }
+
+        new SimpleLightbox(elementList, {
+          captionPosition: 'bottom',
+          navText: ['←','→'],
+          closeText: '×',
+          loadingCaption: 'Laden...'
+        });
     });
     
     const lightboxElementsSplide = document.querySelectorAll(".splide");
