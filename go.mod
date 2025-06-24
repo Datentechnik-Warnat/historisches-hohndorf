@@ -10,5 +10,3 @@ require (
 	github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230 // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
-
-replace github.com/swarnat/hugo-geofinder => /var/www/html/hugo-test/hugo-geofinder
