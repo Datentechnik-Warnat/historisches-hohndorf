@@ -16,12 +16,17 @@ module:
       target: static
   imports:
     - path: github.com/hugomods/pwa
+    - path: github.com/swarnat/hugo-geofinder
 
 gnoreErrors: ["error-disable-taxonomy"]
 disableKinds: ["taxonomy", "term", "taxonomyTerm"]
 
-
 params:
+  geofinder:
+    maxDistance: 100
+    floatingButtonTooltip: "Suche an aktuellem Standort"
+    mobileFooter: true
+
   pwa:
     caches:
       font:

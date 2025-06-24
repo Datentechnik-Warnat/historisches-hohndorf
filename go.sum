@@ -6,5 +6,7 @@ github.com/hugomods/idb-js v0.1.0 h1:mA6hEGtR0aFEdmq9zYMGpfSpCU6SMilx9RzC4uK3DqY
 github.com/hugomods/idb-js v0.1.0/go.mod h1:GPfnmr+BQpP4s6Epd4Yu+RlUog8q/Djw8qy8BZFWZ04=
 github.com/hugomods/pwa v0.9.0 h1:bEKFkP7xkow6IadY9hKEwPbdKeLC0XZfVT31gGP7CPc=
 github.com/hugomods/pwa v0.9.0/go.mod h1:KpYK2Ffn969+Py5SzV3+iXYase4UoUeRAsd9jY7Q2Us=
+github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230 h1:pmIunWQ3DD/lECavecN33THyxaQSwWngr5KZBhIemeQ=
+github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230/go.mod h1:myZ02kFjI5A+iv64YwysL9pbsxgXGcLTHpcujQKe/Ws=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
