@@ -10,5 +10,7 @@ github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230 h1:pmIunWQ3
 github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230/go.mod h1:myZ02kFjI5A+iv64YwysL9pbsxgXGcLTHpcujQKe/Ws=
 github.com/swarnat/hugo-geofinder v0.0.0-20250625222610-b5c7a10ef90a h1:z8fTs0rl7dzf6tBoGyXIa8Dlq4VK5Je9jsnCUltkMtE=
 github.com/swarnat/hugo-geofinder v0.0.0-20250625222610-b5c7a10ef90a/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
+github.com/swarnat/hugo-geofinder v0.0.0-20250626083243-c5e3057b46ad h1:fVPih2LRDPnsFDzdwvhZmP2x+IrniKcqjHFTIcui3HI=
+github.com/swarnat/hugo-geofinder v0.0.0-20250626083243-c5e3057b46ad/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
