@@ -16,7 +16,7 @@ module:
       target: static
   imports:
     - path: github.com/hugomods/pwa
-    - path: github.com/swarnat/hugo-geofinder
+    - path: github.com/Datentechnik-Warnat/hugo-geofinder
 
 gnoreErrors: ["error-disable-taxonomy"]
 disableKinds: ["taxonomy", "term", "taxonomyTerm"]
