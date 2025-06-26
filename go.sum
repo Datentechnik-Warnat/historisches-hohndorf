@@ -1,3 +1,5 @@
+github.com/Datentechnik-Warnat/hugo-geofinder v1.0.1 h1:wlS9veymfyt25Vhzzh5JH9wi529jA7yE/nWSDioecF4=
+github.com/Datentechnik-Warnat/hugo-geofinder v1.0.1/go.mod h1:G121WAOtNdqeZiWiB4BdcK+W4N2GYeqtrtuYg5sS7cY=
 github.com/GoogleChrome/workbox v7.3.0+incompatible h1:P0VEW4ZF9li7dLLOsB3wknFhVBym05A7td3x/qWFTZM=
 github.com/GoogleChrome/workbox v7.3.0+incompatible/go.mod h1:dyEoGLpJeO43pUVJb+nNNr1WRgoF81hNEl4UGLV+yow=
 github.com/hugomods/icons v0.6.6 h1:gGlafcBDRP7sSID+tgLcWdog+s/QBj8DIfU+h9tZj1U=
@@ -6,15 +8,5 @@ github.com/hugomods/idb-js v0.1.0 h1:mA6hEGtR0aFEdmq9zYMGpfSpCU6SMilx9RzC4uK3DqY
 github.com/hugomods/idb-js v0.1.0/go.mod h1:GPfnmr+BQpP4s6Epd4Yu+RlUog8q/Djw8qy8BZFWZ04=
 github.com/hugomods/pwa v0.9.0 h1:bEKFkP7xkow6IadY9hKEwPbdKeLC0XZfVT31gGP7CPc=
 github.com/hugomods/pwa v0.9.0/go.mod h1:KpYK2Ffn969+Py5SzV3+iXYase4UoUeRAsd9jY7Q2Us=
-github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230 h1:pmIunWQ3DD/lECavecN33THyxaQSwWngr5KZBhIemeQ=
-github.com/swarnat/hugo-geofinder v0.0.0-20250624210350-bf77bd6dd230/go.mod h1:myZ02kFjI5A+iv64YwysL9pbsxgXGcLTHpcujQKe/Ws=
-github.com/swarnat/hugo-geofinder v0.0.0-20250625222610-b5c7a10ef90a h1:z8fTs0rl7dzf6tBoGyXIa8Dlq4VK5Je9jsnCUltkMtE=
-github.com/swarnat/hugo-geofinder v0.0.0-20250625222610-b5c7a10ef90a/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626083243-c5e3057b46ad h1:fVPih2LRDPnsFDzdwvhZmP2x+IrniKcqjHFTIcui3HI=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626083243-c5e3057b46ad/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626090838-70c065b4b8a3 h1:Zgqxq4PHxxmYvu/CguQ4OH7F3D4WVZH4lEf2NrQ+L2M=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626090838-70c065b4b8a3/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626091857-d704e5d9509b h1:NPArDUpf78T2dg+smh+Py4CF0JQozr8HbljawuGWtnk=
-github.com/swarnat/hugo-geofinder v0.0.0-20250626091857-d704e5d9509b/go.mod h1:C6i/43RTB3Yxta1eDq3qsAz7IoQlLouJ0bOnqBi+SIc=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
