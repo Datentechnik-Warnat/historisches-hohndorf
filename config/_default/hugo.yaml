@@ -23,9 +23,10 @@ disableKinds: ["taxonomy", "term", "taxonomyTerm"]
 
 params:
   geofinder:
-    maxDistance: 100
+    maxDistance: 1000
     floatingButtonTooltip: "Suche an aktuellem Standort"
     mobileFooter: true
+    mobileRouting: true
 
   pwa:
     caches:
