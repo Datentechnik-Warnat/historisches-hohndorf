@@ -91,7 +91,10 @@ $color-dim: #6c6d6d;
       top:7px;
       margin-left:-130px;
 
-      color: $color-year;
+      background-color: $color-year;
+      color:white;
+      border-radius: 10px;
+      padding:2px 8px;
       content: attr(data-date);
       text-align: right;
       font-weight: 100;
