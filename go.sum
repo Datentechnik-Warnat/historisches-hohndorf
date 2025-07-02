@@ -1,5 +1,7 @@
 github.com/Datentechnik-Warnat/hugo-geofinder v1.0.1 h1:wlS9veymfyt25Vhzzh5JH9wi529jA7yE/nWSDioecF4=
 github.com/Datentechnik-Warnat/hugo-geofinder v1.0.1/go.mod h1:G121WAOtNdqeZiWiB4BdcK+W4N2GYeqtrtuYg5sS7cY=
+github.com/Datentechnik-Warnat/hugo-geofinder v1.0.2 h1:BufWyGiH+q1a/QeJo087y7bgoVk6MOQF9S0ytUK42RM=
+github.com/Datentechnik-Warnat/hugo-geofinder v1.0.2/go.mod h1:G121WAOtNdqeZiWiB4BdcK+W4N2GYeqtrtuYg5sS7cY=
 github.com/GoogleChrome/workbox v7.3.0+incompatible h1:P0VEW4ZF9li7dLLOsB3wknFhVBym05A7td3x/qWFTZM=
 github.com/GoogleChrome/workbox v7.3.0+incompatible/go.mod h1:dyEoGLpJeO43pUVJb+nNNr1WRgoF81hNEl4UGLV+yow=
 github.com/hugomods/icons v0.6.6 h1:gGlafcBDRP7sSID+tgLcWdog+s/QBj8DIfU+h9tZj1U=
