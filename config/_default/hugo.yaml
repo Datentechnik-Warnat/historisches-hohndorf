@@ -24,7 +24,7 @@ disableKinds: ["taxonomy", "term", "taxonomyTerm"]
 params:
   geofinder:
     maxDistance: 1000
-    floatingButtonTooltip: "Suche an aktuellem Standort"
+    floatingButtonTooltip: "Standortsuche"
     mobileFooter: true
     mobileRouting: true
 
@@ -94,6 +94,7 @@ markup:
 
 outputs:
   home:
+  - JSON
   - HTML
   - RSS
   - Offline
