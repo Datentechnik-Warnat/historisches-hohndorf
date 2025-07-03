@@ -1,7 +1,8 @@
 baseURL: https://historisches-hohndorf.de/
 languageCode: 'de'
-title: Historisches Hohndorf
+title: Digitale Geschichtstour durch Hohndorf
 theme: hugo-flex
+favicon: images/wappen_128.png
 
 # Enable SCSS processing
 build:
@@ -19,7 +20,7 @@ module:
     - path: github.com/Datentechnik-Warnat/hugo-geofinder
 
 gnoreErrors: ["error-disable-taxonomy"]
-disableKinds: ["taxonomy", "term", "taxonomyTerm"]
+disableKinds: ["taxonomy", "term"]
 
 params:
   geofinder:
@@ -94,7 +95,6 @@ markup:
 
 outputs:
   home:
-  - JSON
   - HTML
   - RSS
   - Offline
